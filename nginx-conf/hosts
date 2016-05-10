@@ -1,0 +1,41 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+127.0.0.1	dbmaster mysqlmaster mongomaster cachemaster
+255.255.255.255	broadcasthost
+::1             localhost  
+127.0.0.1	zentao.huntdreams.lc
+127.0.0.1	dev.gionee.lc admin.gionee.lc
+127.0.0.1	www.bitsla.lc bitsla.lc
+127.0.0.1	www.opensns.lc opensns.lc
+127.0.0.1	www.lingke.lc lingke.lc
+127.0.0.1	www.teach.lc teach.lc
+127.0.0.1	www.guomeng.lc
+127.0.0.1	www.dormcy.lc
+127.0.0.1	www.huntdreams.lc app.huntdreams.lc
+127.0.0.1	base.huntdreams.lc
+127.0.0.1	vpn.huntdreams.lc
+127.0.0.1       mall.huntdreams.lc
+127.0.0.1       alipay.huntdreams.lc
+127.0.0.1	whmcs.lc
+127.0.0.1	localhost.lc
+127.0.0.1	www.jd.lc
+127.0.0.1	www.ocenter.lc
+127.0.0.1	www.ecshop.lc
+127.0.0.1 	www.datasparking.lc datasparking.lc
+127.0.0.1	taobao.bigdata.lc
+127.0.0.1	testing.lc
+127.0.0.1	apihuiv1.hongdong.lc hui.hongdong.lc gold.hongdong.lc api.hongdong.lc admin.hongdong.lc www.hongdong.lc test.hongdong.lc
+115.28.22.226   v1.api.hongdong.org v1.cdn.hongdong.org www.hongdong.org
+111.202.69.163  upload.qiniu.com
+192.168.99.100 	docker local.evaengine.com static.evaengine.com
+192.168.56.10 	stocks-vm geode-server xd-server
+106.3.132.139 hk01
+106.3.132.142 hk02
+106.3.132.144 hk03
+121.42.144.80 ECS1
+115.28.208.164 ECS2 

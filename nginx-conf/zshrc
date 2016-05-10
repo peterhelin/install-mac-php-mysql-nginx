@@ -1,0 +1,204 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/noprom/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ ZSH_THEME="robbyrussell"
+# ZSH_THEME="honukai"
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+# User configuration
+
+export PATH="/Applications/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/opt/local/bin:/opt/local/sbin:/Users/noprom/Documents/Dev/Cocos/OS/cocos2d-x-3.6/templates:/Users/noprom/Documents/Dev/Cocos/OS/cocos2d-x-3.6/tools/cocos2d-console/bin:/usr/local/Cellar/maven/bin:/Users/noprom/Documents/Dev/Java/OS/Crawler/heritrix-3.2.0/bin:/usr/local/sbin:/usr/sbin:/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin::/usr/local/Cellar/gradle/gradle-2.2/bin:/usr/local/Cellar/scala/scala-2.11.7/bin:/usr/local/Cellar/spark/bin:/Users/noprom/Documents/Dev/Android/Tools/Android-SDK-Mac/tools:/Users/noprom/Documents/Dev/Android/Tools/Android-SDK-Mac/platform-tools:/Users/noprom/Documents/Dev/Android/Tools/Android-NDK-Mac/android-ndk-r10e:/Users/noprom/Documents/Dev/Android/Po/apktool-jdgui/apktool"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# ====================================BIG DATA========================================
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+#JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME
+export CLASSPATH
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Scala Home
+SCALA_HOME=/opt/app/scala/scala-2.10.4
+export SCALA_HOME
+export PATH=$SCALA_HOME/bin:$PATH
+
+# Maven HOME
+export M2_HOME=/opt/app/maven/apache-maven-3.3.9
+export M2_HOME
+export PATH=$M2_HOME/bin:$PATH
+
+# Fulme Home
+FLUME_HOME=/opt/app/flume/apache-flume-1.6.0-bin
+FLUME_LIB=$FLUME_HOME/lib
+export FLUME_HOME
+export FLUME_LIB
+export PATH=$FLUME_HOME/bin:$PATH
+CLASSPATH=$CLASSPATH:$FLUME_LIB
+export CLASSPATH
+
+# KAFKA HOME
+KAFKA_HOME=/opt/app/kafka/kafka_2.10-0.9.0.1
+KAFKA_LIB=$KAFKA_HOME/libs
+export KAFKA_HOME
+export KAFKA_LIB
+export PATH=$KAFKA_HOME/bin:$PATH
+CLASSPATH=$CLASSPATH:$KAFKA_LIB
+export CLASSPATH
+
+# Spark Home
+SPARK_HOME=/opt/app/spark/spark-1.6.1-bin-hadoop2.6
+export SPARK_HOME
+export PATH=$PATH:$SPARK_HOME/bin
+
+# Elasticsearch Home
+ELASTICSEARCH_HOME=/opt/app/elasticsearch/elasticsearch-2.1.1
+export ELASTICSEARCH_HOME
+export PATH=$ELASTICSEARCH_HOME/bin:$PATH
+
+# LogStash Home
+LOGSTASH_HOME=/opt/app/logstash/logstash-2.1.1
+export LOGSTASH_HOME
+export PATH=$LOGSTASH_HOME/bin:$PATH
+
+# Kibana Home
+KIBANA_HOME=/opt/app/kibana/kibana-4.3.1-darwin-x64
+export KIBANA_HOME
+export PATH=$KIBANA_HOME/bin:$PATH
+
+# Hadoop Home
+HADOOP_HOME=/opt/app/hadoop/hadoop-2.5.2
+export HADOOP_HOME
+export PATH=$PATH:$HADOOP_HOME/bin
+
+# Redis Home
+REDIS_HOME=/usr/local/redis
+export REDIS_HOME
+export PATH=REDIS_HOME/bin:$PATH
+
+# ====================================BIG DATA========================================
+
+# Gradle Home
+GRADLE_HOME=/usr/local/Cellar/gradle/gradle-2.2
+export GRADLE_HOME
+export PATH=$PATH:$GRADLE_HOME/bin
+
+# HERITRIX_HOME
+HERITRIX_HOME=/Users/noprom/Documents/Dev/Java/OS/Crawler/heritrix-3.2.0
+export HERITRIX_HOME
+export PATH=$HERITRIX_HOME/bin:$PATH
+
+# Android SDK
+export PATH=${PATH}:/Users/noprom/Documents/Dev/Android/Tools/Android-SDK-Mac/tools:/Users/noprom/Documents/Dev/Android/Tools/Android-SDK-Mac/platform-tools 
+# Android NDK Path
+export PATH=${PATH}:/Users/noprom/Documents/Dev/Android/Tools/Android-NDK-Mac/android-ndk-r10e
+# Apktool Path
+export PATH=${PATH}:/Users/noprom/Documents/Dev/Android/Po/apktool-jdgui/apktool
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/noprom/Documents/Dev/Cocos/OS/cocos2d-x-3.6/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/noprom/Documents/Dev/Cocos/OS/cocos2d-x-3.6/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+export PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/sbin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
+##
+# Your previous /Users/noprom/.bash_profile file was backed up as /Users/noprom/.bash_profile.macports-saved_2015-10-30_at_12:54:00
+##
+
+# MacPorts Installer addition on 2015-10-30_at_12:54:00: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
+# added by Anaconda2 2.4.1 installer
+#export PATH="/Applications/anaconda/bin:$PATH"
+
+alias ll="ls -al"
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+alias nano="subl"
+export EDITOR="subl"
